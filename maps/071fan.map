@@ -169,12 +169,16 @@
 }
 // brush 17
 {
-( -96 64 -544 ) ( 32 64 -544 ) ( -96 192 -544 ) common/nodrop -12 8 -90 0.0625599995 0.0625599995 0 0 0
-( -96 64 32 ) ( -96 192 32 ) ( 32 64 32 ) common/nodrop 52 8 -90 0.0625599995 0.0625599995 0 0 0
-( 360 -328 32 ) ( 360 -328 -544 ) ( -392 -328 -544 ) common/nodrop -12 -72 0 0.0625599995 0.0625599995 0 0 0
-( 360 360 -544 ) ( 360 360 32 ) ( -392 360 32 ) common/nodrop -12 -72 180 0.0625599995 0.0625599995 0 0 0
-( -392 -328 32 ) ( -392 -328 -544 ) ( -392 360 32 ) common/nodrop 8 56 180 0.0625599995 0.0625599995 0 0 0
-( 360 -328 -544 ) ( 360 -328 32 ) ( 360 360 32 ) common/nodrop 8 56 0 0.0625599995 0.0625599995 0 0 0
+( -80 192 288 ) ( -80 -192 288 ) ( 80 192 288 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 192 80 1056 ) ( -80 -192 1056 ) ( 80 192 1056 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 80 -192 1056 ) ( -80 -192 288 ) ( -80 -192 1056 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( -80 192 1056 ) ( 80 192 288 ) ( 80 192 1056 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( -192 80 1056 ) ( -192 -80 1056 ) ( -192 -80 288 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 192 80 1056 ) ( 192 -80 288 ) ( 192 -80 1056 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 192 -80 1056 ) ( 80 -192 288 ) ( 80 -192 1056 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( -192 -80 1056 ) ( -80 -192 1056 ) ( -80 -192 288 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( -80 192 1056 ) ( -192 80 1056 ) ( -192 80 288 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 80 192 1056 ) ( 192 80 288 ) ( 192 80 1056 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
 }
 // brush 18
 {
@@ -348,6 +352,19 @@
 ( -32 0 288 ) ( 96 0 288 ) ( -32 128 288 ) evil6_floors/e6c_floor 240 0 -90 0.2500799894 0.2500799894 0 0 0
 ( 256 64 64 ) ( 256 48 -64 ) ( 256 64 -64 ) common/caulk 0 0 0 0.5 0.5 0 0 0
 }
+// brush 38
+{
+( -96 64 -544 ) ( 32 64 -544 ) ( -96 192 -544 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( -96 272 288 ) ( -96 400 288 ) ( 32 272 288 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 360 -328 32 ) ( 360 -328 -544 ) ( -392 -328 -544 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 360 360 -544 ) ( 360 360 32 ) ( -392 360 32 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( -344 -328 32 ) ( -344 -328 -544 ) ( -344 360 32 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 344 -328 -544 ) ( 344 -328 32 ) ( 344 360 32 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 344 -120 -64 ) ( 136 -328 -64 ) ( 344 -120 64 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( -136 -328 -64 ) ( -344 -120 -64 ) ( -136 -328 64 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( -344 152 -64 ) ( -136 360 -64 ) ( -344 152 64 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 136 360 -64 ) ( 344 152 -64 ) ( 136 360 64 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+}
 }
 // entity 1
 {
@@ -397,74 +414,50 @@
 }
 // entity 9
 {
-"classname" "light"
-"_color" "0.98 0.31 0.02"
-"light" "1500"
-"origin" "0 0 -128"
+"classname" "item_health"
+"origin" "864 0 96"
 }
 // entity 10
 {
 "classname" "item_health"
-"origin" "864 0 96"
+"origin" "-864 0 96"
 }
 // entity 11
 {
 "classname" "item_health"
-"origin" "-864 0 96"
+"origin" "0 736 96"
 }
 // entity 12
 {
 "classname" "item_health"
-"origin" "0 736 96"
-}
-// entity 13
-{
-"classname" "item_health"
 "origin" "0 -736 96"
 }
-// entity 14
+// entity 13
 {
 "classname" "ammo_shells"
 "origin" "448 320 64"
 }
-// entity 15
+// entity 14
 {
 "classname" "ammo_cells"
 "origin" "448 -320 64"
 }
-// entity 16
+// entity 15
 {
 "classname" "ammo_cells"
 "origin" "320 -448 64"
 }
-// entity 17
+// entity 16
 {
 "classname" "ammo_cells"
 "origin" "-320 448 64"
 }
-// entity 18
+// entity 17
 {
 "classname" "ammo_cells"
 "origin" "-448 320 64"
 }
-// entity 19
-{
-"classname" "func_rotating"
-"origin" "0 0 -82"
-"model2" "/models/mapobjects/fan/fan.md3"
-"dmg" "6565"
-"speed" "-300"
-// brush 0
-{
-( -240 0 -64 ) ( -112 0 -64 ) ( -240 128 -64 ) common/clip -24 0 -90 0.2500799894 0.2500799894 0 0 0
-( -240 0 -32 ) ( -240 128 -32 ) ( -112 0 -32 ) common/clip -24 0 -90 0.2500799894 0.2500799894 0 0 0
-( -240 -48 -96 ) ( -240 -48 32 ) ( -112 -48 -96 ) common/clip -24 -48 0 0.2500799894 0.2500799894 0 0 0
-( -240 48 -96 ) ( -112 48 -96 ) ( -240 48 32 ) common/clip -24 -48 180 0.2500799894 0.2500799894 0 0 0
-( -48 0 -96 ) ( -48 128 -96 ) ( -48 0 32 ) common/clip 0 -48 180 0.2500799894 0.2500799894 0 0 0
-( 48 0 -96 ) ( 48 0 32 ) ( 48 128 -96 ) common/clip 0 -48 0 0.2500799894 0.2500799894 0 0 0
-}
-}
-// entity 20
+// entity 18
 {
 "classname" "trigger_hurt"
 "dmg" "8080"
@@ -479,7 +472,7 @@
 ( 288 0 -224 ) ( 288 0 -96 ) ( 288 128 -224 ) common/trigger 0 -56 0 0.1249599978 0.1249599978 0 0 0
 }
 }
-// entity 21
+// entity 19
 {
 "classname" "func_plat"
 "dmg" "645"
@@ -495,7 +488,7 @@
 ( -672 -128 96 ) ( -672 -128 224 ) ( -672 0 96 ) base_wall/bluemetalsupport2e 64 0 0 1 0.25 0 0 0
 }
 }
-// entity 22
+// entity 20
 {
 "classname" "func_plat"
 "dmg" "645"
@@ -511,7 +504,7 @@
 ( -672 256 96 ) ( -672 256 224 ) ( -672 384 96 ) base_wall/bluemetalsupport2e 191.9999847412 0 0 1 0.25 0 0 0
 }
 }
-// entity 23
+// entity 21
 {
 "classname" "func_plat"
 "dmg" "645"
@@ -527,7 +520,7 @@
 ( 800 256 96 ) ( 800 256 224 ) ( 800 384 96 ) base_wall/bluemetalsupport2e 192 0 0 1 0.25 0 0 0
 }
 }
-// entity 24
+// entity 22
 {
 "classname" "func_plat"
 "dmg" "645"
@@ -543,7 +536,7 @@
 ( 256 -800 96 ) ( 256 -800 224 ) ( 384 -800 96 ) base_wall/bluemetalsupport2e 191.9999847412 0 0 1 0.25 0 0 0
 }
 }
-// entity 25
+// entity 23
 {
 "classname" "func_plat"
 "dmg" "645"
@@ -559,7 +552,7 @@
 ( -128 -800 96 ) ( -128 -800 224 ) ( 0 -800 96 ) base_wall/bluemetalsupport2e 64 0 0 1 0.25 0 0 0
 }
 }
-// entity 26
+// entity 24
 {
 "classname" "func_plat"
 "dmg" "645"
@@ -575,7 +568,7 @@
 ( -128 672 96 ) ( -128 672 224 ) ( 0 672 96 ) base_wall/bluemetalsupport2e 64 0 0 1 0.25 0 0 0
 }
 }
-// entity 27
+// entity 25
 {
 "classname" "func_plat"
 "dmg" "645"
@@ -591,7 +584,7 @@
 ( 256 672 96 ) ( 256 672 224 ) ( 384 672 96 ) base_wall/bluemetalsupport2e 192 0 0 1 0.25 0 0 0
 }
 }
-// entity 28
+// entity 26
 {
 "classname" "func_plat"
 "dmg" "645"
@@ -607,87 +600,87 @@
 ( 800 -128 96 ) ( 800 -128 224 ) ( 800 0 96 ) base_wall/bluemetalsupport2e 64 0 0 1 0.25 0 0 0
 }
 }
-// entity 29
+// entity 27
 {
 "classname" "item_health_small"
 "origin" "-640 0 352"
 }
-// entity 30
+// entity 28
 {
 "classname" "item_health_small"
 "origin" "448 0 352"
 }
-// entity 31
+// entity 29
 {
 "classname" "item_health_small"
 "origin" "512 0 352"
 }
-// entity 32
+// entity 30
 {
 "classname" "item_health_small"
 "origin" "576 0 352"
 }
-// entity 33
+// entity 31
 {
 "classname" "item_health_small"
 "origin" "640 0 352"
 }
-// entity 34
+// entity 32
 {
 "classname" "item_health_small"
 "origin" "-576 0 352"
 }
-// entity 35
+// entity 33
 {
 "classname" "item_health_small"
 "origin" "-512 0 352"
 }
-// entity 36
+// entity 34
 {
 "classname" "item_health_small"
 "origin" "-448 0 352"
 }
-// entity 37
+// entity 35
 {
 "classname" "item_health_small"
 "origin" "0 640 352"
 }
-// entity 38
+// entity 36
 {
 "classname" "item_health_small"
 "origin" "0 -448 352"
 }
-// entity 39
+// entity 37
 {
 "classname" "item_health_small"
 "origin" "0 -512 352"
 }
-// entity 40
+// entity 38
 {
 "classname" "item_health_small"
 "origin" "0 -576 352"
 }
-// entity 41
+// entity 39
 {
 "classname" "item_health_small"
 "origin" "0 -640 352"
 }
-// entity 42
+// entity 40
 {
 "classname" "item_health_small"
 "origin" "0 576 352"
 }
-// entity 43
+// entity 41
 {
 "classname" "item_health_small"
 "origin" "0 512 352"
 }
-// entity 44
+// entity 42
 {
 "classname" "item_health_small"
 "origin" "0 448 352"
 }
-// entity 45
+// entity 43
 {
 "classname" "func_plat"
 "speed" "200"
@@ -702,7 +695,7 @@
 ( -384 0 544 ) ( -384 384 544 ) ( -384 0 672 ) evil6_floors/e6c_floor 0 0 0 0.5 0.5 0 0 0
 }
 }
-// entity 46
+// entity 44
 {
 "classname" "func_plat"
 "speed" "200"
@@ -717,7 +710,7 @@
 ( 384 0 544 ) ( 384 0 672 ) ( 384 384 544 ) evil6_floors/e6c_floor 0 0 0 0.5 0.5 0 0 0
 }
 }
-// entity 47
+// entity 45
 {
 "classname" "func_plat"
 "speed" "200"
@@ -732,7 +725,7 @@
 ( -384 0 544 ) ( -384 384 544 ) ( -384 0 672 ) evil6_floors/e6c_floor 0 0 0 0.5 0.5 0 0 0
 }
 }
-// entity 48
+// entity 46
 {
 "classname" "func_plat"
 "speed" "200"
@@ -747,69 +740,67 @@
 ( 384 0 544 ) ( 384 0 672 ) ( 384 384 544 ) evil6_floors/e6c_floor 0 0 0 0.5 0.5 0 0 0
 }
 }
+// entity 47
+{
+"classname" "info_player_deathmatch"
+"origin" "-480.000000 0.000000 352.000000"
+"spawnflags" "1"
+}
+// entity 48
+{
+"classname" "info_player_deathmatch"
+"angle" "-179.999985"
+"origin" "480.000000 0.000000 352.000000"
+"spawnflags" "1"
+}
 // entity 49
 {
 "classname" "info_player_deathmatch"
-"angle" "360"
-"origin" "-736 0 96"
+"angle" "90.000000"
+"origin" "0.000000 -480.000000 352.000000"
 "spawnflags" "1"
 }
 // entity 50
 {
 "classname" "info_player_deathmatch"
-"angle" "180"
-"origin" "736 0 96"
+"angle" "-90.000000"
+"origin" "0.000000 480.000000 352.000000"
 "spawnflags" "1"
 }
 // entity 51
 {
 "classname" "info_player_deathmatch"
-"angle" "90"
-"origin" "0 -736 96"
+"angle" "-179.999985"
+"origin" "480.000000 0.000000 704.000000"
 "spawnflags" "1"
 }
 // entity 52
 {
 "classname" "info_player_deathmatch"
-"angle" "270"
-"origin" "0 736 96"
+"angle" "-90.000000"
+"origin" "0.000000 480.000000 704.000000"
 "spawnflags" "1"
 }
 // entity 53
 {
 "classname" "info_player_deathmatch"
-"angle" "180"
-"origin" "672 0 704"
+"origin" "-480.000000 0.000000 704.000000"
 "spawnflags" "1"
 }
 // entity 54
 {
 "classname" "info_player_deathmatch"
-"angle" "270"
-"origin" "0 672 704"
+"angle" "90.000000"
+"origin" "0.000000 -480.000000 704.000000"
 "spawnflags" "1"
 }
 // entity 55
-{
-"classname" "info_player_deathmatch"
-"angle" "360"
-"origin" "-672 0 704"
-"spawnflags" "1"
-}
-// entity 56
-{
-"classname" "info_player_deathmatch"
-"angle" "90"
-"origin" "0 -672 704"
-"spawnflags" "1"
-}
-// entity 57
 {
 "classname" "item_quad"
 "spawnflags" "1"
 "origin" "0 0 864"
 }
-// entity 58
+// entity 56
 {
 "classname" "target_speaker"
 "wait" "347"
@@ -817,7 +808,7 @@
 "spawnflags" "1"
 "origin" "0 0 832"
 }
-// entity 59
+// entity 57
 {
 "classname" "target_speaker"
 "wait" "347"
@@ -825,451 +816,552 @@
 "spawnflags" "1"
 "origin" "0 0 480"
 }
-// entity 60
+// entity 58
 {
 "classname" "target_speaker"
 "noise" "/sound/world/fan.wav"
 "spawnflags" "5"
 "origin" "0 0 0"
 }
-// entity 61
+// entity 59
 {
 "classname" "target_speaker"
 "noise" "/sound/world/lava1.wav"
 "spawnflags" "1"
 "origin" "0 0 -336"
 }
-// entity 62
+// entity 60
 {
 "classname" "item_health_mega"
 "spawnflags" "1"
 "origin" "0 0 448"
 }
-// entity 63
+// entity 61
 {
 "classname" "weapon_rocketlauncher"
 "wait" "10"
 "origin" "-160 160 352"
 }
-// entity 64
+// entity 62
 {
 "classname" "weapon_lightning"
 "wait" "10"
 "origin" "160 -160 352"
 }
-// entity 65
+// entity 63
 {
 "classname" "ammo_lightning"
 "origin" "224 0 352"
 }
-// entity 66
+// entity 64
 {
 "classname" "ammo_lightning"
 "origin" "0 -224 352"
 }
-// entity 67
+// entity 65
 {
 "classname" "ammo_rockets"
 "origin" "-224 0 352"
 }
-// entity 68
+// entity 66
 {
 "classname" "ammo_rockets"
 "origin" "0 224 352"
 }
-// entity 69
+// entity 67
 {
 "classname" "target_location"
 "origin" "128.000000 128.000000 96.000000"
 "message" "The Fan"
 }
-// entity 70
+// entity 68
 {
 "classname" "target_location"
 "origin" "-128.000000 128.000000 96.000000"
 "message" "The Fan"
 }
-// entity 71
+// entity 69
 {
 "classname" "target_location"
 "origin" "-128.000000 -128.000000 96.000000"
 "message" "The Fan"
 }
-// entity 72
+// entity 70
 {
 "classname" "target_location"
 "origin" "128.000000 -128.000000 96.000000"
 "message" "The Fan"
 }
-// entity 73
+// entity 71
 {
 "classname" "target_location"
 "origin" "256.000000 704.000000 384.000000"
 "message" "North Middle Floor"
 }
-// entity 74
+// entity 72
 {
 "classname" "target_location"
 "origin" "-256.000000 704.000000 384.000000"
 "message" "North Middle Floor"
 }
-// entity 75
+// entity 73
 {
 "classname" "target_location"
 "origin" "256.000000 448.000000 96.000000"
 "message" "North Lower Floor"
 }
-// entity 76
+// entity 74
 {
 "classname" "target_location"
 "origin" "-256.000000 448.000000 96.000000"
 "message" "North Lower Floor"
 }
-// entity 77
+// entity 75
 {
 "classname" "target_location"
 "origin" "0.000000 192.000000 384.000000"
 "message" "Above The Fan"
 }
-// entity 78
+// entity 76
 {
 "classname" "target_location"
 "origin" "-448.000000 256.000000 96.000000"
 "message" "West Lower Floor"
 }
-// entity 79
+// entity 77
 {
 "classname" "target_location"
 "origin" "-256.000000 -448.000000 96.000000"
 "message" "South Lower Floor"
 }
-// entity 80
+// entity 78
 {
 "classname" "target_location"
 "origin" "-704.000000 256.000000 384.000000"
 "message" "West Middle Floor"
 }
-// entity 81
+// entity 79
 {
 "classname" "target_location"
 "origin" "-256.000000 -704.000000 384.000000"
 "message" "South Middle Floor"
 }
-// entity 82
+// entity 80
 {
 "classname" "target_location"
 "origin" "256.000000 -448.000000 96.000000"
 "message" "South Lower Floor"
 }
-// entity 83
+// entity 81
 {
 "classname" "target_location"
 "origin" "256.000000 -704.000000 384.000000"
 "message" "South Middle Floor"
 }
-// entity 84
+// entity 82
 {
 "classname" "target_location"
 "origin" "0.000000 -192.000000 384.000000"
 "message" "Above The Fan"
 }
-// entity 85
+// entity 83
 {
 "classname" "target_location"
 "origin" "-192.000000 0.000000 384.000000"
 "message" "Above The Fan"
 }
-// entity 86
+// entity 84
 {
 "classname" "target_location"
 "origin" "-704.000000 -256.000000 384.000000"
 "message" "West Middle Floor"
 }
-// entity 87
+// entity 85
 {
 "classname" "target_location"
 "origin" "-448.000000 -256.000000 96.000000"
 "message" "West Lower Floor"
 }
-// entity 88
+// entity 86
 {
 "classname" "target_location"
 "origin" "704.000000 256.000000 384.000000"
 "message" "East Middle Floor"
 }
-// entity 89
+// entity 87
 {
 "classname" "target_location"
 "origin" "192.000000 0.000000 384.000000"
 "message" "Above The Fan"
 }
-// entity 90
+// entity 88
 {
 "classname" "target_location"
 "origin" "704.000000 -256.000000 384.000000"
 "message" "East Middle Floor"
 }
-// entity 91
+// entity 89
 {
 "classname" "target_location"
 "origin" "448.000000 -256.000000 96.000000"
 "message" "East Lower Floor"
 }
-// entity 92
+// entity 90
 {
 "classname" "target_location"
 "origin" "448.000000 256.000000 96.000000"
 "message" "East Lower Floor"
 }
-// entity 93
+// entity 91
 {
 "classname" "target_location"
 "origin" "256.000000 704.000000 96.000000"
 "message" "North Lower Floor"
 }
-// entity 94
+// entity 92
 {
 "classname" "target_location"
 "origin" "-704.000000 0.000000 96.000000"
 "message" "West Lower Floor"
 }
-// entity 95
+// entity 93
 {
 "classname" "target_location"
 "origin" "704.000000 256.000000 96.000000"
 "message" "East Lower Floor"
 }
-// entity 96
+// entity 94
 {
 "classname" "target_location"
 "origin" "448.000000 0.000000 96.000000"
 "message" "East Lower Floor"
 }
-// entity 97
+// entity 95
 {
 "classname" "target_location"
 "origin" "0.000000 -704.000000 96.000000"
 "message" "South Lower Floor"
 }
-// entity 98
+// entity 96
 {
 "classname" "target_location"
 "origin" "0.000000 -448.000000 96.000000"
 "message" "South Lower Floor"
 }
-// entity 99
+// entity 97
 {
 "classname" "target_location"
 "origin" "256.000000 -704.000000 96.000000"
 "message" "South Lower Floor"
 }
-// entity 100
+// entity 98
 {
 "classname" "target_location"
 "origin" "-448.000000 0.000000 96.000000"
 "message" "West Lower Floor"
 }
-// entity 101
+// entity 99
 {
 "classname" "target_location"
 "origin" "-704.000000 -256.000000 96.000000"
 "message" "West Lower Floor"
 }
-// entity 102
+// entity 100
 {
 "classname" "target_location"
 "origin" "704.000000 -256.000000 96.000000"
 "message" "East Lower Floor"
 }
-// entity 103
+// entity 101
 {
 "classname" "target_location"
 "origin" "704.000000 0.000000 96.000000"
 "message" "East Lower Floor"
 }
-// entity 104
+// entity 102
 {
 "classname" "target_location"
 "origin" "-704.000000 256.000000 96.000000"
 "message" "West Lower Floor"
 }
-// entity 105
+// entity 103
 {
 "classname" "target_location"
 "origin" "-256.000000 -704.000000 96.000000"
 "message" "South Lower Floor"
 }
-// entity 106
+// entity 104
 {
 "classname" "target_location"
 "origin" "0.000000 448.000000 96.000000"
 "message" "North Lower Floor"
 }
-// entity 107
+// entity 105
 {
 "classname" "target_location"
 "origin" "-256.000000 704.000000 96.000000"
 "message" "North Lower Floor"
 }
-// entity 108
+// entity 106
 {
 "classname" "target_location"
 "origin" "0.000000 704.000000 96.000000"
 "message" "North Lower Floor"
 }
-// entity 109
+// entity 107
 {
 "classname" "target_location"
 "origin" "-704.000000 0.000000 384.000000"
 "message" "West Middle Floor"
 }
-// entity 110
+// entity 108
 {
 "classname" "target_location"
 "origin" "-448.000000 256.000000 736.000000"
 "message" "West Upper Floor"
 }
-// entity 111
+// entity 109
 {
 "classname" "target_location"
 "origin" "0.000000 -704.000000 384.000000"
 "message" "South Middle Floor"
 }
-// entity 112
+// entity 110
 {
 "classname" "target_location"
 "origin" "256.000000 -448.000000 736.000000"
 "message" "South Upper Floor"
 }
-// entity 113
+// entity 111
 {
 "classname" "target_location"
 "origin" "448.000000 -256.000000 736.000000"
 "message" "East Upper Floor"
 }
-// entity 114
+// entity 112
 {
 "classname" "target_location"
 "origin" "704.000000 0.000000 384.000000"
 "message" "East Middle Floor"
 }
-// entity 115
+// entity 113
 {
 "classname" "target_location"
 "origin" "256.000000 448.000000 736.000000"
 "message" "North Upper Floor"
 }
-// entity 116
+// entity 114
 {
 "classname" "target_location"
 "origin" "0.000000 704.000000 384.000000"
 "message" "North Middle Floor"
 }
-// entity 117
+// entity 115
 {
 "classname" "target_location"
 "origin" "0.000000 448.000000 384.000000"
 "message" "North Middle Floor"
 }
-// entity 118
+// entity 116
 {
 "classname" "target_location"
 "origin" "448.000000 0.000000 384.000000"
 "message" "East Middle Floor"
 }
-// entity 119
+// entity 117
 {
 "classname" "target_location"
 "origin" "-448.000000 0.000000 384.000000"
 "message" "West Middle Floor"
 }
-// entity 120
+// entity 118
 {
 "classname" "target_location"
 "origin" "0.000000 -448.000000 384.000000"
 "message" "South Middle Floor"
 }
-// entity 121
+// entity 119
 {
 "classname" "target_location"
 "origin" "0.000000 704.000000 736.000000"
 "message" "North Upper Floor"
 }
-// entity 122
+// entity 120
 {
 "classname" "target_location"
 "origin" "-256.000000 448.000000 736.000000"
 "message" "North Upper Floor"
 }
-// entity 123
+// entity 121
 {
 "classname" "target_location"
 "origin" "704.000000 0.000000 736.000000"
 "message" "East Upper Floor"
 }
-// entity 124
+// entity 122
 {
 "classname" "target_location"
 "origin" "448.000000 256.000000 736.000000"
 "message" "East Upper Floor"
 }
-// entity 125
+// entity 123
 {
 "classname" "target_location"
 "origin" "0.000000 -704.000000 736.000000"
 "message" "South Upper Floor"
 }
-// entity 126
+// entity 124
 {
 "classname" "target_location"
 "origin" "-256.000000 -448.000000 736.000000"
 "message" "South Upper Floor"
 }
-// entity 127
+// entity 125
 {
 "classname" "target_location"
 "origin" "-704.000000 0.000000 736.000000"
 "message" "West Upper Floor"
 }
-// entity 128
+// entity 126
 {
 "classname" "target_location"
 "origin" "-448.000000 -256.000000 736.000000"
 "message" "West Upper Floor"
 }
-// entity 129
+// entity 127
 {
 "classname" "target_location"
 "origin" "-448.000000 0.000000 736.000000"
 "message" "West Upper Floor"
 }
-// entity 130
+// entity 128
 {
 "classname" "target_location"
 "origin" "0.000000 -448.000000 736.000000"
 "message" "South Upper Floor"
 }
-// entity 131
+// entity 129
 {
 "classname" "target_location"
 "origin" "448.000000 0.000000 736.000000"
 "message" "East Upper Floor"
 }
-// entity 132
+// entity 130
 {
 "classname" "target_location"
 "origin" "0.000000 448.000000 736.000000"
 "message" "North Upper Floor"
 }
-// entity 133
+// entity 131
 {
 "classname" "info_player_intermission"
 "origin" "-256.000000 -256.000000 768.000000"
 "target" "info_notnull1"
 }
-// entity 134
+// entity 132
 {
 "classname" "info_notnull"
 "origin" "160.000000 160.000000 544.000000"
 "targetname" "info_notnull1"
+}
+// entity 133
+{
+"classname" "info_player_deathmatch"
+"angle" "-180.000000"
+"origin" "608.000000 -128.000000 96.000000"
+"spawnflags" "1"
+}
+// entity 134
+{
+"classname" "info_player_deathmatch"
+"angle" "90.000000"
+"origin" "-128.000000 -608.000000 96.000000"
+"spawnflags" "1"
+}
+// entity 135
+{
+"classname" "info_player_deathmatch"
+"angle" "0.000003"
+"origin" "-608.000000 128.000000 96.000000"
+"spawnflags" "1"
+}
+// entity 136
+{
+"classname" "info_player_deathmatch"
+"angle" "-89.999992"
+"origin" "128.000000 608.000000 96.000000"
+"spawnflags" "1"
+}
+// entity 137
+{
+"classname" "info_player_deathmatch"
+"angle" "90.000000"
+"origin" "0.000000 -672.000000 704.000000"
+"spawnflags" "1"
+}
+// entity 138
+{
+"classname" "info_player_deathmatch"
+"angle" "180"
+"origin" "672 0 704"
+"spawnflags" "1"
+}
+// entity 139
+{
+"classname" "info_player_deathmatch"
+"angle" "270"
+"origin" "0 672 704"
+"spawnflags" "1"
+}
+// entity 140
+{
+"classname" "info_player_deathmatch"
+"angle" "360"
+"origin" "-672 0 704"
+"spawnflags" "1"
+}
+// entity 141
+{
+"classname" "info_player_deathmatch"
+"origin" "-608.000000 -128.000000 96.000000"
+"spawnflags" "1"
+"angle" "0.000003"
+}
+// entity 142
+{
+"classname" "info_player_deathmatch"
+"angle" "-180.000000"
+"origin" "608.000000 128.000000 96.000000"
+"spawnflags" "1"
+}
+// entity 143
+{
+"classname" "info_player_deathmatch"
+"angle" "90.000000"
+"origin" "128.000000 -608.000000 96.000000"
+"spawnflags" "1"
+}
+// entity 144
+{
+"classname" "info_player_deathmatch"
+"angle" "-89.999992"
+"origin" "-128.000000 608.000000 96.000000"
+"spawnflags" "1"
+}
+// entity 145
+{
+"classname" "func_rotating"
+"origin" "0 0 -82"
+"model2" "/models/mapobjects/fan/fan.md3"
+"dmg" "6565"
+"speed" "-300"
+// brush 0
+{
+( -240 0 -64 ) ( -112 0 -64 ) ( -240 128 -64 ) common/clip -24 0 -90 0.2500799894 0.2500799894 0 0 0
+( -240 0 -32 ) ( -240 128 -32 ) ( -112 0 -32 ) common/clip -24 0 -90 0.2500799894 0.2500799894 0 0 0
+( -240 -48 -96 ) ( -240 -48 32 ) ( -112 -48 -96 ) common/clip -24 -48 0 0.2500799894 0.2500799894 0 0 0
+( -240 48 -96 ) ( -112 48 -96 ) ( -240 48 32 ) common/clip -24 -48 180 0.2500799894 0.2500799894 0 0 0
+( -48 0 -96 ) ( -48 128 -96 ) ( -48 0 32 ) common/clip 0 -48 180 0.2500799894 0.2500799894 0 0 0
+( 48 0 -96 ) ( 48 0 32 ) ( 48 128 -96 ) common/clip 0 -48 0 0.2500799894 0.2500799894 0 0 0
+}
 }

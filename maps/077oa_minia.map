@@ -9644,12 +9644,12 @@ base_floor/diamond2c
 }
 // brush 932
 {
-( -1208 -1168 1208 ) ( 1256 -1168 1208 ) ( 1264 -1176 1216 ) skies/moonsky 0 0 0 0.5 0.5 0 0 0
-( 1256 -1168 1216 ) ( 1256 -1168 -176 ) ( 1264 -1176 -176 ) skies/moonsky 0 0 0 0.5 0.5 0 0 0
-( 1256 -1168 -168 ) ( -1208 -1168 -168 ) ( -1216 -1176 -176 ) skies/moonsky 0 0 0 0.5 0.5 0 0 0
-( -1216 -1176 -8 ) ( -1216 -1176 464 ) ( 1264 -1176 -8 ) skies/moonsky 0 0 0 0.5 0.5 0 0 0
-( -1208 -1168 -176 ) ( -1208 -1168 1216 ) ( -1216 -1176 1216 ) skies/moonsky 0 0 0 0.5 0.5 0 0 0
-( -1208 -1168 -168 ) ( 1256 -1168 -168 ) ( 1256 -1168 1208 ) skies/moonsky 0 0 0 0.5 0.5 0 0 0
+( -1232 -1168 1216 ) ( 1232 -1168 1216 ) ( 1240 -1176 1224 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1232 -1168 1224 ) ( 1232 -1168 -168 ) ( 1240 -1176 -168 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1232 -1168 -160 ) ( -1232 -1168 -160 ) ( -1240 -1176 -168 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1240 -1176 0 ) ( -1240 -1176 472 ) ( 1240 -1176 0 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1232 -1168 -168 ) ( -1232 -1168 1224 ) ( -1240 -1176 1224 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1232 -1168 -160 ) ( 1232 -1168 -160 ) ( 1232 -1168 1216 ) common/clip 0 0 0 0.5 0.5 0 0 0
 }
 // brush 933
 {
@@ -14883,6 +14883,15 @@ base_trim/deeprust
 ( -1076 224 -64 ) ( -1076 220 -64 ) ( -1076 224 64 ) common/caulk 0 0 0 0.5 0.5 0 0 0
 ( -1084 224 64 ) ( -1084 220 -64 ) ( -1084 224 -64 ) common/caulk 0 0 0 0.5 0.5 0 0 0
 }
+// brush 1477
+{
+( -1208 -1168 1208 ) ( 1256 -1168 1208 ) ( 1264 -1176 1216 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1256 -1168 1216 ) ( 1256 -1168 -176 ) ( 1264 -1176 -176 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1256 -1168 -168 ) ( -1208 -1168 -168 ) ( -1216 -1176 -176 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1216 -1176 -8 ) ( -1216 -1176 464 ) ( 1264 -1176 -8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1208 -1168 -176 ) ( -1208 -1168 1216 ) ( -1216 -1176 1216 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1208 -1168 -168 ) ( 1256 -1168 -168 ) ( 1256 -1168 1208 ) common/clip 0 0 0 0.5 0.5 0 0 0
+}
 }
 // entity 1
 {
@@ -16583,6 +16592,7 @@ base_floor/clang_floor3bstairtop2
 // entity 217
 {
 "classname" "func_static"
+"gametype" "pos"
 // brush 0
 {
 ( 40 48 -48 ) ( 40 16 -48 ) ( 8 48 -48 ) acc_dm3/cop 32 0 0 0.25 0.25 134217728 0 0
@@ -16592,4 +16602,200 @@ base_floor/clang_floor3bstairtop2
 ( 24 0 -56 ) ( 24 0 -48 ) ( 56 0 -56 ) acc_dm3/rivets 448 0 0 0.25 0.25 134217728 0 0
 ( -8 32 -56 ) ( -8 64 -56 ) ( -8 32 -48 ) acc_dm3/rivets 448 0 0 0.25 0.25 134217728 0 0
 }
+}
+// entity 218
+{
+"classname" "team_CTF_bluespawn"
+"origin" "-64 -672 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 219
+{
+"classname" "team_CTF_bluespawn"
+"origin" "-64 -864 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 220
+{
+"classname" "team_CTF_bluespawn"
+"origin" "-64 -800 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 221
+{
+"classname" "team_CTF_bluespawn"
+"origin" "-64 -736 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 222
+{
+"classname" "team_CTF_bluespawn"
+"origin" "64 -672 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 223
+{
+"classname" "team_CTF_bluespawn"
+"origin" "64 -864 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 224
+{
+"classname" "team_CTF_bluespawn"
+"origin" "64 -800 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 225
+{
+"classname" "team_CTF_bluespawn"
+"origin" "64 -736 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 226
+{
+"classname" "team_CTF_bluespawn"
+"origin" "0 -672 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 227
+{
+"classname" "team_CTF_bluespawn"
+"origin" "0 -864 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 228
+{
+"classname" "team_CTF_bluespawn"
+"origin" "0 -800 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 229
+{
+"classname" "team_CTF_bluespawn"
+"origin" "0 -736 160"
+"angle" "180"
+"gametype" "elimination dd"
+}
+// entity 230
+{
+"classname" "team_CTF_redspawn"
+"origin" "96 752 24"
+"gametype" "elimination dd"
+}
+// entity 231
+{
+"classname" "team_CTF_redspawn"
+"origin" "96 944 24"
+"gametype" "elimination dd"
+}
+// entity 232
+{
+"classname" "team_CTF_redspawn"
+"origin" "96 880 24"
+"gametype" "elimination dd"
+}
+// entity 233
+{
+"classname" "team_CTF_redspawn"
+"origin" "96 816 24"
+"gametype" "elimination dd"
+}
+// entity 234
+{
+"classname" "team_CTF_redspawn"
+"origin" "160 752 24"
+"gametype" "elimination dd"
+}
+// entity 235
+{
+"classname" "team_CTF_redspawn"
+"origin" "160 688 24"
+"gametype" "elimination dd"
+}
+// entity 236
+{
+"classname" "team_CTF_redspawn"
+"origin" "-32 880 24"
+"gametype" "elimination dd"
+}
+// entity 237
+{
+"classname" "team_CTF_redspawn"
+"origin" "-32 816 24"
+"gametype" "elimination dd"
+}
+// entity 238
+{
+"classname" "team_CTF_redspawn"
+"origin" "32 752 24"
+"gametype" "elimination dd"
+}
+// entity 239
+{
+"classname" "team_CTF_redspawn"
+"origin" "32 944 24"
+"gametype" "elimination dd"
+}
+// entity 240
+{
+"classname" "team_CTF_redspawn"
+"origin" "32 880 24"
+"gametype" "elimination dd"
+}
+// entity 241
+{
+"classname" "team_CTF_redspawn"
+"origin" "32 816 24"
+"gametype" "elimination dd"
+}
+// entity 242
+{
+"classname" "func_static"
+"gametype" "dd"
+// brush 0
+{
+( -544 528 264 ) ( -544 464 264 ) ( -608 528 264 ) acc_dm3/cop 128 64 0 0.25 0.25 0 0 0
+( -544 528 264 ) ( -608 528 264 ) ( -544 528 256 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+( -544 528 264 ) ( -544 528 256 ) ( -544 464 264 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+( -608 464 256 ) ( -544 464 256 ) ( -608 528 256 ) common/caulk 0 0 0 0.5 0.5 0 0 0
+( -608 464 256 ) ( -608 464 264 ) ( -544 464 256 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+( -608 464 256 ) ( -608 528 256 ) ( -608 464 264 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+}
+}
+// entity 243
+{
+"classname" "team_CTF_blueflag"
+"origin" "-576 496 280"
+"gametype" "dd"
+}
+// entity 244
+{
+"classname" "func_static"
+"gametype" "dd"
+// brush 0
+{
+( 672 -400 264 ) ( 672 -464 264 ) ( 608 -400 264 ) acc_dm3/cop 128 192 0 0.25 0.25 0 0 0
+( 672 -400 264 ) ( 608 -400 264 ) ( 672 -400 256 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+( 672 -400 264 ) ( 672 -400 256 ) ( 672 -464 264 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+( 608 -464 256 ) ( 672 -464 256 ) ( 608 -400 256 ) common/caulk 0 0 0 0.5 0.5 0 0 0
+( 608 -464 256 ) ( 608 -464 264 ) ( 672 -464 256 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+( 608 -464 256 ) ( 608 -400 256 ) ( 608 -464 264 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+}
+}
+// entity 245
+{
+"classname" "team_CTF_redflag"
+"origin" "640 -432 280"
+"gametype" "dd"
 }

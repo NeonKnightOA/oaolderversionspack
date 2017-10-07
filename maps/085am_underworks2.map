@@ -19211,6 +19211,8 @@ evil1_metals/de-r_mtl
 "origin" "320 -640 32"
 "angle" "-1.4033e-014"
 "spawnflags" "1"
+"!gametype" "pos"
+"!gametpe" "pos"
 }
 // entity 709
 {
@@ -19299,4 +19301,24 @@ evil1_metals/de-r_mtl
 "origin" "-1152 -960 -216"
 "angle" "90"
 "spawnflags" "1"
+}
+// entity 722
+{
+"classname" "func_static"
+"gametype" "pos"
+// brush 0
+{
+( 160 -224 16 ) ( 160 -288 16 ) ( 96 -224 16 ) acc_dm3/cop 128 128 0 0.25 0.25 0 0 0
+( 160 -224 16 ) ( 96 -224 16 ) ( 160 -224 8 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+( 160 -224 16 ) ( 160 -224 8 ) ( 160 -288 16 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+( 96 -288 8 ) ( 160 -288 8 ) ( 96 -224 8 ) common/caulk 0 0 0 0.5 0.5 0 0 0
+( 96 -288 8 ) ( 96 -288 16 ) ( 160 -288 8 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+( 96 -288 8 ) ( 96 -224 8 ) ( 96 -288 16 ) acc_dm3/rivets 0 0 0 0.25 0.25 0 0 0
+}
+}
+// entity 723
+{
+"classname" "team_CTF_neutralflag"
+"origin" "128 -256 40"
+"gametype" "pos"
 }

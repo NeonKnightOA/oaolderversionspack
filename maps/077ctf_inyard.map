@@ -19388,6 +19388,7 @@ gothic_block/blocks11b
 {
 "classname" "team_CTF_redflag"
 "origin" "1760 0 -80"
+"notffa" "1"
 }
 // entity 91
 {
@@ -19640,6 +19641,7 @@ gothic_block/blocks11b
 {
 "classname" "team_CTF_blueflag"
 "origin" "-2144 0 -80"
+"notffa" "1"
 }
 // entity 131
 {
@@ -21041,11 +21043,13 @@ cosmo_sfx/decal2
 {
 "classname" "team_redobelisk"
 "origin" "1760.000000 0.000000 -120.000000"
+"notffa" "1"
 }
 // entity 335
 {
 "classname" "team_blueobelisk"
 "origin" "-2144.000000 0.000000 -120.000000"
+"notffa" "1"
 }
 // entity 336
 {

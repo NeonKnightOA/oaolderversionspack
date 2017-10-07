@@ -4827,6 +4827,7 @@ common/caulk
 {
 "classname" "team_CTF_redflag"
 "origin" "1420 -512 108"
+"notffa" "1"
 }
 // entity 32
 {
@@ -4875,7 +4876,7 @@ common/caulk
 {
 "classname" "team_CTF_blueflag"
 "origin" "-1868 -196 120"
-"rotation" "-1 0 0 0 -1 0 0 0 1 "
+"notffa" "1"
 }
 // entity 41
 {
@@ -5215,11 +5216,13 @@ common/caulk
 {
 "classname" "team_blueobelisk"
 "origin" "-1864.000000 -192.000000 72.000000"
+"notffa" "1"
 }
 // entity 94
 {
 "classname" "team_redobelisk"
 "origin" "1416.000000 -512.000000 72.000000"
+"notffa" "1"
 }
 // entity 95
 {
